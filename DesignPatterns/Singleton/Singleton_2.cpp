@@ -40,5 +40,4 @@ int main()
 
 // Tips:
 //	1. 各客户共享唯一实例，所以应该使用 std::shared_ptr 而不是 std::unique_ptr
-//	2. 以 std::shared_ptr 实现的 Singleton ，虽然解决了C++98普通指针风格Singleton的内存泄漏问题，
-//		但是该示例还存在非线程安全的问题，因此还需要进一步优化（加锁）。
+//	2. 以 std::shared_ptr 实现的 Singleton ，虽然解决了C++98普通指针风格Singleton的内存泄漏问题，但该示例还存在线程安全的问题，因此还需要进一步优化（加锁）
