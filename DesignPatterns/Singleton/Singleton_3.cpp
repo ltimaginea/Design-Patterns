@@ -40,5 +40,6 @@ int main()
 }
 
 // C++98 style的Singleton的缺点:
-//	1. 完全不再使用后销毁Singleton实例的时机难以把握，当没有delete时会造成内存泄漏。当delete之后，对于那些已经获得Singleton实例的指针，它们将成为“空悬指针”，如示例中的 Singleton::instance_ , a 和 b 。
+//	1. 完全不再使用后销毁Singleton实例的时机难以把握，当没有delete时会造成内存泄漏。
+//	   当delete之后，对于那些已经获得Singleton实例的指针，它们将成为“空悬指针”，如示例中的 Singleton::instance_ , a 和 b 。
 //	2. 存在线程安全的问题，因此还需要进一步优化（加锁）。
