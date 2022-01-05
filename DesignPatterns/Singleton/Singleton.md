@@ -62,5 +62,5 @@ int main()
 * [C++ 单例模式总结与剖析 - 行者孙 - 博客园 (cnblogs.com)](https://www.cnblogs.com/sunchaothu/p/10389842.html)
 * [I.2: Avoid non-const global variables (isocpp.github.io)](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ri-global)
 * [I.3: Avoid singletons (isocpp.github.io)](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ri-singleton)
-* [Static_and_Global_Variables (Google C++ Style Guide)](http://link.zhihu.com/?target=https%3A//google.github.io/styleguide/cppguide.html%23Static_and_Global_Variables)
+* [Static_and_Global_Variables (Google C++ Style Guide)](https://google.github.io/styleguide/cppguide.html#Static_and_Global_Variables)
 
