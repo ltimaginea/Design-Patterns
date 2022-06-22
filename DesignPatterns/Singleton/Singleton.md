@@ -2,7 +2,9 @@
 
 保证一个类仅有一个实例，并提供一个访问它的全局访问点。
 
-## 实现要点
+
+
+## Guidelines
 
 - 构造函数应该声明为非公有，从而禁止外界创建实例。
 
@@ -56,6 +58,7 @@ int main()
 
 ## References
 
+* [Design-Patterns/Singleton.md at main · ltimaginea/Design-Patterns · GitHub](https://github.com/ltimaginea/Design-Patterns/blob/main/DesignPatterns/Singleton/Singleton.md)
 * [Design-Patterns-in-Cpp17/Singleton.cpp at master · downdemo/Design-Patterns-in-Cpp17 · GitHub](https://github.com/downdemo/Design-Patterns-in-Cpp17/blob/master/src/Singleton.cpp)
 * [DesignPatterns/Singleton at master · pezy/DesignPatterns · GitHub](https://github.com/pezy/DesignPatterns/blob/master/Singleton/main.cpp)
 * [Static local variables - cppreference.com](https://en.cppreference.com/w/cpp/language/storage_duration#Static_local_variables)
