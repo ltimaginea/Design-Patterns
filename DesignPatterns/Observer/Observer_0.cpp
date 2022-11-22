@@ -21,7 +21,7 @@ public:
 	void Attach(std::weak_ptr<Observer> observer)
 	{
 		auto sp = observer.lock();
-		// 确保不重复添加同一观察者
+		// Ensure that the same observer is not added repeatedly.
 		if (std::find_if(observers_.begin(), observers_.end(), [&](const std::weak_ptr<Observer>& wp) { return sp == wp.lock(); })
 			== observers_.end())
 		{
@@ -46,7 +46,7 @@ public:
 			}
 			else
 			{
-				// 删除已失效的 weak_ptr
+				// Erase the expired weak_ptr.
 				it = observers_.erase(it);
 			}
 		}
