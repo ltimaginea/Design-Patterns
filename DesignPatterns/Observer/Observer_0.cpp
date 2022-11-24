@@ -22,7 +22,7 @@ public:
 	{
 		auto sp = observer.lock();
 		// Ensure that the same observer is not added repeatedly.
-		if (std::find_if(observers_.begin(), observers_.end(), [&](const std::weak_ptr<Observer>& wp) { return sp == wp.lock(); })
+		if (std::find_if(observers_.begin(), observers_.end(), [&sp](const std::weak_ptr<Observer>& wp) { return sp == wp.lock(); })
 			== observers_.end())
 		{
 			observers_.push_back(observer);
@@ -32,7 +32,7 @@ public:
 	void Detach(std::weak_ptr<Observer> observer)
 	{
 		auto sp = observer.lock();
-		std::erase_if(observers_, [&](const std::weak_ptr<Observer>& wp) { return sp == wp.lock(); });
+		std::erase_if(observers_, [&sp](const std::weak_ptr<Observer>& wp) { return sp == wp.lock(); });
 	}
 
 	void Notify()
